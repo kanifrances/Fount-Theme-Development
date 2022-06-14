@@ -1,0 +1,66 @@
+
+/*
+@package Fount Theme
+  ===============
+   ADMIN PAGE
+  ================
+
+*/
+
+
+.fount-general-form,
+.fount-sidebar-preview{
+
+    display: grid;
+    float: left;
+}
+
+.fount-sidebar-preview{
+    width:200px;
+    background-color: beige;
+    padding: 10px;
+    text-align: center;
+    margin-right: 100px;
+}
+
+.fount-sidebar{
+    display: grid;
+    text-align: center;
+}
+
+h1.fount-firstname, .fount-lastname{
+    font-weight: 200;
+
+}
+
+h2.fount-description{
+    font-weight: 100;
+}
+
+.image-container {
+    display:grid;
+    width:100%;
+    overflow:hidden;
+    text-align:center;
+
+}
+
+.profile-picture{
+    width:124px;
+    height:125px;
+    overflow:hidden;
+    border-radius: 50%;
+    margin:20px auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+
+ul,li {
+    list-style: none;
+    font-family: Helvetica, sans-serif;   
+}
+
+

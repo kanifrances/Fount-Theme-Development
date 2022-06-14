@@ -1,2 +1,2 @@
-# Fount-Theme-Development
-WordPress Theme development
+# Fount-Theme
+A wordpress theme

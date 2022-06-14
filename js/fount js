@@ -1,0 +1,39 @@
+//
+jQuery(document).ready(function($){
+
+var mediaUploader;
+
+//binding the upload button
+$( '#upload-button'). on('click', function(element) {
+        element.preventDefault();
+        if( mediaUploader ){
+            mediaUploader.open();
+            return;
+        }
+    //defining media uploader and hooking it
+        mediaUploader = wp.media.frames.file_frame = wp.media({
+                title: 'Choose profile picture',
+                button: {
+                    text: 'choose Picture'
+                },
+                multiple: false
+        });
+
+    //check if a picture is being selected
+            mediaUploader .on('select', function(){
+                attachment = mediaUploader.state() .get('selection').first().toJSON();
+                // converting to a JSON STRING
+                $('#profile-picture').val(attachment.url);
+                $('#profile-picture-preview').css('background-image' , 'url('+ attachment.url +')');
+            });
+
+            mediaUploader.open();
+
+    } );
+
+});
+
+
+
+
+
